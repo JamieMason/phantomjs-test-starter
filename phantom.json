@@ -1,0 +1,7 @@
+{
+  "diskCache": true,
+  "ignoreSslErrors": true,
+  "loadImages": false,
+  "maxDiskCacheSize": 1000,
+  "outputEncoding": "utf8"
+}
