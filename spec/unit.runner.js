@@ -6,7 +6,7 @@ var jasmineNode = require('./lib/jasmine-phantom/reporter.js').jasmineNode;
 require(pwd + '/node_modules/jasmine-expect/dist/jasmine-matchers.js');
 
 // Load specs
-require('./unit/index.test.js');
+require('./unit/my-module.test.js');
 
 // Launch tests
 jasmineEnv = jasmine.getEnv();

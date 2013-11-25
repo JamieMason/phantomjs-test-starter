@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <title>Code coverage report for spec/unit/</title>
+    <title>Code coverage report for spec/unit/my-module.test.js</title>
     <meta charset="utf-8">
 
     <link rel="stylesheet" href="../../prettify.css">
@@ -180,7 +180,7 @@
 </head>
 <body>
 <div class="header high">
-    <h1>Code coverage report for <span class="entity">spec/unit/</span></h1>
+    <h1>Code coverage report for <span class="entity">spec/unit/my-module.test.js</span></h1>
     <h2>
         
         Statements: <span class="metric">100% <small>(47 / 47)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
@@ -195,41 +195,337 @@
         Lines: <span class="metric">100% <small>(47 / 47)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
         
     </h2>
-    <div class="path"><a href="../../index.html">All files</a> &#187; spec/unit/</div>
+    <div class="path"><a href="../../index.html">All files</a> &#187; <a href="index.html">spec/unit/</a> &#187; my-module.test.js</div>
 </div>
 <div class="body">
-<div class="coverage-summary">
-<table>
-<thead>
-<tr>
-   <th data-col="file" data-fmt="html" data-html="true" class="file">File</th>
-   <th data-col="pic" data-type="number" data-fmt="html" data-html="true" class="pic"></th>
-   <th data-col="statements" data-type="number" data-fmt="pct" class="pct">Statements</th>
-   <th data-col="statements_raw" data-type="number" data-fmt="html" class="abs"></th>
-   <th data-col="branches" data-type="number" data-fmt="pct" class="pct">Branches</th>
-   <th data-col="branches_raw" data-type="number" data-fmt="html" class="abs"></th>
-   <th data-col="functions" data-type="number" data-fmt="pct" class="pct">Functions</th>
-   <th data-col="functions_raw" data-type="number" data-fmt="html" class="abs"></th>
-   <th data-col="lines" data-type="number" data-fmt="pct" class="pct">Lines</th>
-   <th data-col="lines_raw" data-type="number" data-fmt="html" class="abs"></th>
-</tr>
-</thead>
-<tbody><tr>
-	<td class="file high" data-value="my-module.test.js"><a href="my-module.test.js.html">my-module.test.js</a></td>
-	<td data-value="100" class="pic high"><span class="cover-fill cover-full" style="width: 100px;"></span><span class="cover-empty" style="width:0px;"></span></td>
-	<td data-value="100" class="pct high">100%</td>
-	<td data-value="47" class="abs high">(47&nbsp;/&nbsp;47)</td>
-	<td data-value="100" class="pct high">100%</td>
-	<td data-value="0" class="abs high">(0&nbsp;/&nbsp;0)</td>
-	<td data-value="88.46" class="pct high">88.46%</td>
-	<td data-value="26" class="abs high">(23&nbsp;/&nbsp;26)</td>
-	<td data-value="100" class="pct high">100%</td>
-	<td data-value="47" class="abs high">(47&nbsp;/&nbsp;47)</td>
-	</tr>
+<pre><table class="coverage">
+<tr><td class="line-count">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109</td><td class="line-coverage"><span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">5</span>
+<span class="cline-any cline-yes">5</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">describe('myModule', function() {
+&nbsp;
+  beforeEach(function() {
+    this.myModule = require('../../src/my-module');
+    this.factoryApi = Object.keys(this.myModule).sort().join(',');
+  });
+&nbsp;
+  describe('factory', function() {
+&nbsp;
+    it('should expose the expected api', function() {
+      expect(this.factoryApi).toEqual('create');
+    });
+&nbsp;
+  });
+&nbsp;
+  describe('create', function() {
+&nbsp;
+    describe('when invoked with no arguments', function() {
+&nbsp;
+      beforeEach(function() {
+        this.instance = this.myModule.create();
+      });
+&nbsp;
+      it('should return an instance of our module', function() {
+        expect(this.instance).toBeObject();
+      });
+&nbsp;
+    });
+&nbsp;
+    describe('when invoked with a mock WebPage', function() {
+&nbsp;
+      beforeEach(function() {
+        this.mockWebPage = {};
+        this.instance = this.myModule.create(this.mockWebPage);
+      });
+&nbsp;
+      it('should return an instance of our module', function() {
+        expect(this.instance).toBeObject();
+      });
+&nbsp;
+    });
+&nbsp;
+    describe('instances', function() {
+&nbsp;
+      beforeEach(function() {
+        this.instance = this.myModule.create();
+        this.instanceApi = Object.keys(this.instance).sort().join(',');
+      });
+&nbsp;
+      it('should expose the expected api', function() {
+        expect(this.instanceApi).toEqual('goToUrl');
+      });
+&nbsp;
+      describe('goToUrl', function() {
+&nbsp;
+        beforeEach(function() {
+          var suite = this;
+          suite.mockWebPage = {
+            create: <span class="fstat-no" title="function not covered" >function() {</span>}
+          };
+          suite.mockPage = {
+            open: <span class="fstat-no" title="function not covered" >function() {</span>}
+          };
+          spyOn(suite.mockWebPage, 'create').andReturn(suite.mockPage);
+          spyOn(suite.mockPage, 'open').andCallFake(function(url, done) {
+            done(suite.mockPage);
+          });
+          suite.instance = suite.myModule.create(suite.mockWebPage);
+        });
+&nbsp;
+        describe('when invoked with a url and callback', function() {
+&nbsp;
+          beforeEach(function() {
+&nbsp;
+            runs(function() {
+&nbsp;
+              var suite = this;
+&nbsp;
+              suite.page = 'foo';
+              suite.onLoad = <span class="fstat-no" title="function not covered" >function() {</span>};
+&nbsp;
+              spyOn(suite, 'onLoad').andCallFake(function(page) {
+                suite.page = page;
+              });
+&nbsp;
+              suite.instance.goToUrl('https://github.com/JamieMason/phantomjs-app-starter', suite.onLoad);
+&nbsp;
+            });
+&nbsp;
+            waitsFor(function(argument) {
+              return this.page !== 'foo';
+            });
+&nbsp;
+          });
+&nbsp;
+          it('opens the url and passes the PhantomJS page object to the callback', function() {
+            expect(this.onLoad).toHaveBeenCalled();
+          });
+&nbsp;
+        });
+&nbsp;
+      });
+&nbsp;
+    });
+&nbsp;
+  });
+&nbsp;
+});
+&nbsp;</pre></td></tr>
+</table></pre>
 
-</tbody>
-</table>
-</div>
 </div>
 <div class="footer">
     <div class="meta">Generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Mon Nov 25 2013 08:30:40 GMT+0000 (GMT)</div>
