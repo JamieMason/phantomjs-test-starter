@@ -1,7 +1,7 @@
 {
   "name": "phantomjs-app-starter",
   "author": "Jamie Mason (https://github.com/JamieMason)",
-  "description": "Starter Template to write and test PhantomJS applications",
+  "description": "Starter Template for testing PhantomJS ‘Applications’ with Jasmine, Grunt, and Istanbul",
   "homepage": "https://github.com/JamieMason/phantomjs-app-starter",
   "bugs": "https://github.com/JamieMason/phantomjs-app-starter/issues",
   "main": "./Gruntfile.js",
