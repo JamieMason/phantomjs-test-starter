@@ -1,12 +1,34 @@
 {
   "name": "phantomjs-app-starter",
+  "author": "Jamie Mason (https://github.com/JamieMason)",
   "description": "Starter Template to write and test PhantomJS applications",
+  "homepage": "https://github.com/JamieMason/phantomjs-app-starter",
+  "bugs": "https://github.com/JamieMason/phantomjs-app-starter/issues",
+  "main": "./Gruntfile.js",
   "version": "1.0.0",
-  "license": "Copyright Fold Left Ltd 2013",
-  "author": "Jamie Mason, @fold_left",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/JamieMason/phantomjs-app-starter.git"
+  },
   "engines": {
     "node": ">= 0.8.0"
   },
+  "licenses": [{
+    "type": "MIT",
+    "url": "https://raw.github.com/JamieMason/phantomjs-app-starter/master/LICENSE"
+  }],
+  "keywords": [
+    "PhantomJS",
+    "headless",
+    "crawl",
+    "spider",
+    "test",
+    "jasmine",
+    "istanbul",
+    "coverage",
+    "browser",
+    "testing"
+  ],
   "peerDependencies": {
     "grunt": "~0.4.1"
   },
@@ -23,5 +45,8 @@
   },
   "scripts": {
     "test": "grunt test"
-  }
+  },
+  "contributors": [
+    "Jamie Mason (https://github.com/JamieMason)"
+  ]
 }
