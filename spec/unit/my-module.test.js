@@ -93,7 +93,7 @@ describe('myModule', function() {
 
           });
 
-          it('opens the url and passes the PhantomJS page object to the callback', function() {
+          it('should open the url and passes the PhantomJS page object to the callback', function() {
             expect(this.onLoad).toHaveBeenCalled();
           });
 
