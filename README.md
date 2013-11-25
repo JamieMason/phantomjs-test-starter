@@ -10,6 +10,14 @@ This project is concerned with how you test the so-called server side of a Phant
 
 ## Installation
 
+### NPM
+
+```bash
+npm install phantomjs-test-starter
+```
+
+### Git
+
 ```bash
 git clone git@github.com:JamieMason/phantomjs-test-starter.git
 cd phantomjs-test-starter
