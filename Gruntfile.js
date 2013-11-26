@@ -62,12 +62,7 @@ module.exports = function(grunt) {
         command: 'phantomjs <%= meta.paths.instrumented %>/spec/unit.runner.js'
       },
       instrument: {
-        command: [
-          instrument('src'),
-          instrument('spec'),
-          instrument('lib'),
-          instrument('environment')
-        ].join(' && ')
+        command: instrument('src')
       }
     }
 
