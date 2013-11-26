@@ -3,5 +3,5 @@ environment/auth.js
 node_modules
 
 # In a real application you will want to ignore these files
-# coverage-reporter.json
+# build/coverage.json
 # spec/build

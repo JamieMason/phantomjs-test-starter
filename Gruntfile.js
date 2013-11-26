@@ -15,14 +15,15 @@ module.exports = function(grunt) {
 
     meta: {
       paths: {
-        reports: 'spec/build/reports',
+        buildOutput: 'spec/build',
+        reports: '<%= meta.paths.buildOutput %>/reports',
         instrumented: 'instrumented'
       },
       files: {
-        coverageReport: 'coverage-reporter.json',
+        coverageReport: '<%= meta.paths.buildOutput %>/coverage.json',
         js: [
           '**/*.js',
-          '!spec/build/**/*.js',
+          '!<%= meta.paths.buildOutput %>/**/*.js',
           '!node_modules/**/*.js'
         ]
       }

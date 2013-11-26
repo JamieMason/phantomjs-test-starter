@@ -17,7 +17,7 @@ jasmine.getEnv().addReporter(new jasmineNode.TerminalReporter({
   color: true,
   onComplete: function(runner) {
     if (typeof __coverage__ === 'object') {
-      require('fs').write(pwd + '/coverage-reporter.json', JSON.stringify(__coverage__), 'w');
+      require('fs').write(pwd + '/spec/build/coverage.json', JSON.stringify(__coverage__), 'w');
     }
     phantom.exit(runner.results().failedCount > 0 ? 1 : 0);
   }
