@@ -83,7 +83,7 @@ describe('myModule', function() {
                 suite.page = page;
               });
 
-              suite.instance.goToUrl('https://github.com/JamieMason/phantomjs-app-starter', suite.onLoad);
+              suite.instance.goToUrl('https://github.com/JamieMason/phantomjs-test-starter', suite.onLoad);
 
             });
 

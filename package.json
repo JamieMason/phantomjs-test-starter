@@ -1,21 +1,21 @@
 {
-  "name": "phantomjs-app-starter",
+  "name": "phantomjs-test-starter",
   "author": "Jamie Mason (https://github.com/JamieMason)",
   "description": "Starter Template for testing PhantomJS ‘Applications’ with Jasmine, Grunt, and Istanbul",
-  "homepage": "https://github.com/JamieMason/phantomjs-app-starter",
-  "bugs": "https://github.com/JamieMason/phantomjs-app-starter/issues",
+  "homepage": "https://github.com/JamieMason/phantomjs-test-starter",
+  "bugs": "https://github.com/JamieMason/phantomjs-test-starter/issues",
   "main": "./Gruntfile.js",
   "version": "1.0.0",
   "repository": {
     "type": "git",
-    "url": "git://github.com/JamieMason/phantomjs-app-starter.git"
+    "url": "git://github.com/JamieMason/phantomjs-test-starter.git"
   },
   "engines": {
     "node": ">= 0.8.0"
   },
   "licenses": [{
     "type": "MIT",
-    "url": "https://raw.github.com/JamieMason/phantomjs-app-starter/master/LICENSE"
+    "url": "https://raw.github.com/JamieMason/phantomjs-test-starter/master/LICENSE"
   }],
   "keywords": [
     "PhantomJS",
