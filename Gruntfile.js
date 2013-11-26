@@ -74,16 +74,21 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-shell');
 
   grunt.registerTask('coverage', function() {
+
     var istanbul = require('istanbul');
-    var reportFile = grunt.config.process('<%= meta.files.coverageReport %>');
-    var __coverage__ = grunt.file.readJSON(reportFile);
+    var pathToCoverageData = grunt.config.process('<%= meta.files.coverageReport %>');
     var collector = new istanbul.Collector();
-    var reporter = istanbul.Report.create('html', {
+
+    collector.add(grunt.file.readJSON(pathToCoverageData));
+
+    istanbul.Report.create('html', {
       dir: grunt.config.process('<%= meta.paths.reports %>')
-    });
-    collector.add(__coverage__);
-    grunt.file.write(reportFile, JSON.stringify(collector.getFinalCoverage()));
-    reporter.writeReport(collector, true);
+    }).writeReport(collector, true);
+
+    istanbul.Report.create('cobertura', {
+      dir: grunt.config.process('<%= meta.paths.buildOutput %>')
+    }).writeReport(collector, true);
+
   });
 
   grunt.registerTask('test', [
