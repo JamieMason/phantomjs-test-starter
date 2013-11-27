@@ -44,9 +44,9 @@ For example, tests for the following files:
 
 Would be located at:
 
-+ ./spec/unit/modules/network/ajax.test.js
-+ ./spec/unit/modules/events.test.js
-+ ./spec/unit/modules/data/local-storage.test.js
++ ./spec/unit/modules/network/ajax.spec.js
++ ./spec/unit/modules/events.spec.js
++ ./spec/unit/modules/data/local-storage.spec.js
 
 ## Adding new tests
 

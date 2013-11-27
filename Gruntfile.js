@@ -61,7 +61,7 @@ module.exports = function(grunt) {
       test: {
         command: [
           'phantomjs <%= meta.paths.instrumented %>/spec/unit.runner.js',
-          grunt.file.expand('spec/**/*.test.js').join(',').replace(/spec/g, '.')
+          grunt.file.expand('spec/**/*.spec.js').join(',').replace(/spec\//g, './')
         ].join(' ')
       },
       instrument: {
