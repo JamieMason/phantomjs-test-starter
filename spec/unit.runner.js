@@ -1,12 +1,16 @@
 var jasmineEnv;
+var specPaths = require('system').args[1];
 var pwd = require('system').env.PWD;
 var jasmine = require('./lib/jasmine-phantom/jasmine-1.3.1.js').jasmine;
 var jasmineNode = require('./lib/jasmine-phantom/reporter.js').jasmineNode;
 
+// Load Additional Matchers
 require(pwd + '/node_modules/jasmine-expect/dist/jasmine-matchers.js');
 
 // Load specs
-require('./unit/my-module.test.js');
+specPaths.split(',').forEach(function(specPath) {
+  require(specPath);
+});
 
 // Launch tests
 jasmineEnv = jasmine.getEnv();

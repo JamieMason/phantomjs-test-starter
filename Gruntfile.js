@@ -59,7 +59,10 @@ module.exports = function(grunt) {
         stdout: true
       },
       test: {
-        command: 'phantomjs <%= meta.paths.instrumented %>/spec/unit.runner.js'
+        command: [
+          'phantomjs <%= meta.paths.instrumented %>/spec/unit.runner.js',
+          grunt.file.expand('spec/**/*.test.js').join(',').replace(/spec/g, '.')
+        ].join(' ')
       },
       instrument: {
         command: instrument('src')

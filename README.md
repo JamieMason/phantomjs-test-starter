@@ -50,7 +50,7 @@ Would be located at:
 
 ## Adding new tests
 
-All test files added to **./spec/unit/unit.runner.js** will run, (I hope to generate this file to avoid this manual step).
+All test files are passed to **./spec/unit/unit.runner.js** by Grunt via a command line argument to phantomjs.
 
 ## Modified Jasmine 1.3.1
 
@@ -64,7 +64,6 @@ The core Jasmine library is identical, only how it's exposed has been modified.
 
 They've been left unignored for this example so can see what gets generated during tests, but in a real application you will want to ignore:
 
-+ coverage-reporter.json
 + spec/build
 
 ## Contributing
