@@ -1,6 +1,6 @@
 # phantomjs-test-starter
 
-A boilerplate / starter template for testing [PhantomJS](http://phantomjs.org) ‘Applications’ with [Jasmine](http://pivotal.github.io/jasmine/), [Grunt](http://gruntjs.com) and [Istanbul](http://gotwarlost.github.io/istanbul/).
+A boilerplate / starter template for testing [PhantomJS](http://phantomjs.org) ‘Applications’ with [Jasmine](https://jasmine.github.io/), [Grunt](http://gruntjs.com) and [Istanbul](http://gotwarlost.github.io/istanbul/).
 
 There are many resources on how to run tests in PhantomJS, but none on testing Applications written in PhantomJS _itself_. Non-Trivial Applications such as Data Mining Web Crawlers or Web Page Automation Tools for example.
 
@@ -54,7 +54,7 @@ All test files are passed to **./spec/unit/unit.runner.js** by Grunt via a comma
 
 ## Modified Jasmine 1.3.1
 
-A slightly modified version of [jasmine-standalone-1.3.1](https://github.com/pivotal/jasmine/blob/master/dist/jasmine-standalone-1.3.1.zip) is needed as that does not run in PhantomJS (outside of a page.evaluate that is, which is not relevant to our use case).
+A slightly modified version of [jasmine-standalone-1.3.1](https://github.com/jasmine/jasmine/releases/download/v1.3.1/jasmine-standalone-1.3.1.zip) is needed as that does not run in PhantomJS (outside of a page.evaluate that is, which is not relevant to our use case).
 
 This is due to a perfectly reasonable assumption that any JavaScript environment will have either module.exports _or_ window and **not both** — which is the case in PhantomJS.
 
